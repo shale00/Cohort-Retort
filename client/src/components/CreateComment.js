@@ -14,10 +14,17 @@ const CreateComment = ({ postID }) => {
     update(cache, { data: { addComment } }) {
       if (addComment) {
         try {
-          const { post } = cache.readQuery({
+          const existingQuery = cache.readQuery({
             query: QUERY_POST,
             variables: { postID },
           });
+
+          if (!existingQuery) {
+            return;
+          }
+
+          const { post } = existingQuery;
+
           // Read the specific post query using the 'postID'
 
           cache.writeQuery({

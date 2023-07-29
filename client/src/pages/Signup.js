@@ -105,6 +105,9 @@ function Signup(props) {
         className="container w-full max-w-md background-medBlue p-5 mb-32
    rounded-lg shrink-1 "
       >
+        <p className="text-white text-lg before:content-['*'] before:ml-0.5 before:text-red-500 text-left">
+          Note: You must upload an image (with the other required inputs) before you can 'SignUp'.
+        </p>
         <form className="mt-4" onSubmit={handleFormSubmit}>
           <div className="flex flex-col mb-4">
             <input

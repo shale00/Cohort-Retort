@@ -19,7 +19,7 @@ import { UserProvider } from "./utils/userContext";
 
 
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "/api/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {

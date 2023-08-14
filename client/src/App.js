@@ -19,7 +19,7 @@ import { UserProvider } from "./utils/userContext";
 
 
 const httpLink = createHttpLink({
-  uri: "/api/graphql",
+  uri: "https://cohort-retort-2det1voi7-shale00.vercel.app/api/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {

@@ -38,7 +38,7 @@ app.get('*', (req, res) => {
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
-  server.applyMiddleware({ app, path: "/api/graphql" });
+  server.applyMiddleware({ app, path: "/graphql" });
   
   db.once('open', () => {
     app.listen(PORT, () => {

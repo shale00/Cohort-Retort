@@ -5,7 +5,8 @@
   "main": "server.js",
   "proxy": "http://localhost:8080/",
   "scripts": {
-    "start": "node server.js",
+    "develop": "concurrently \"npm run watch\" \"cd build && npm start\"",
+    "start": "node server.js && react-scripts start",
     "watch": "nodemon"
   },
   "keywords": [],

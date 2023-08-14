@@ -17,7 +17,7 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(express.static('build'));
+app.use(express.static(path.join(__dirname,'build')));
 
 // Serve up static assets
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, './build')));
 
   app.get('/api', (req, res) => {
-    res.sendFile(path.join(__dirname, './build', 'index.html'));
+    res.sendFile(path.join(__dirname, '/build/index.html'));
   });
 }
 

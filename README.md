@@ -4,7 +4,7 @@
 
 ## Description
 
-Social Networking App using MERN. Create an account and continue networking with your former classmates!
+We wanted to create a space for bootcamp students to be able to connect, communicate, and network once the bootcamp was finished. Somwhere more intimate than the regular channels like LinkedIn, ect. So we created Cohort Retort, a Social Networking App using MERN. Once users create an account, they are able to create posts and comment on posts. Each user has their own profile page where they can update their information that is available on each of the user's respective posts and comments.
 
 ## Table of Contents
 
@@ -41,17 +41,10 @@ This application was developed by the following contributors:
 
 ## UI
 
-1. Sign Up Page
-![SignUpPage](./images/SignUpPage.png)
 
-2. Login Page
-![LoginPage](./images/LoginPage.png)
+https://github.com/shale00/Cohort-Retort/assets/123425315/73f719b6-c518-49a8-afb7-df1efa816542
 
-3. Home Page
-![HomePage](/images/HomePage.png)
 
-4. Profile Page
-![ProfilePage](/images/ProfilePage.png)
 
 ## Technologies
 
